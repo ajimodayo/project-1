@@ -1,0 +1,279 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(200, 200, 200);
+}
+
+.all-container {
+    height: 38rem;
+    width: 80%;
+    background-color: #fff;
+    margin: 3rem auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image {
+    height: 38rem;
+    width: 20rem;
+    background-image: url(images/bg-main-desktop.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-basis: 50%;
+}
+
+.inner-gradient {
+    height: 12rem;
+    width: 22rem;
+    background-image: url(images/bg-card-front.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    display: flex;
+    position: absolute;
+    top: 6rem;
+    left: 6rem;
+    z-index: 1;
+}
+
+.cardback {
+    height: 12rem;
+    width: 22rem;
+    background-image: url(images/bg-card-back.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    position: absolute;
+    top: 20rem;
+    left: 9rem;
+    z-index: 1;
+}
+
+.big-circle {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 100%;
+    background-color: #fff;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.small-circle {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 100%;
+    border: 1px solid#fff;
+    margin-top: 2.25rem;
+    margin-left: 1rem;
+}
+
+.number-texts {
+    height: auto;
+    width: 22rem;
+    color: rgb(220, 220, 220);
+    position: absolute;
+    top: 7rem;
+    padding: 2rem 2rem;
+}
+
+.inside-number-texts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+
+.inside-number-texts p {
+    font-size: 0.8rem;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.number-texts .numbers {
+    font-size: 1.5rem;
+    font-family: 'Tilt Neon', cursive;
+    margin-top: -3rem;
+}
+
+.cardback .back-p {
+    color: #fff;
+    font-family: 'Tilt Neon', cursive;
+    position: absolute;
+    top: 5.25rem;
+    left: 17.5rem;
+}
+
+form {
+    position: absolute;
+    top: 12rem;
+    left: 35rem;
+}
+
+form p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: inline-block;
+    margin-bottom: 0.5rem;
+}
+
+form input[type="text"] {
+    padding: 0.5rem 1rem;
+    width: 19rem;
+    height: 2.15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+#ip3 {
+    padding: 0.5rem 1rem;
+    width: 4rem;
+    height: 2.15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.cvv {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.inner-cvv {
+    margin-top: -1.5rem;
+    margin-left: 1rem;
+}
+
+#ip4 {
+    padding: 0.5rem 1rem;
+    width: 10rem;
+    height: 2.15rem;
+    border-radius: 5px;
+    border: 1px solid rgb(220, 220, 220);
+}
+
+form .btn {
+    color: #fff;
+    background-color: rgb(0, 0, 30);
+    padding: 0.8rem 7.75rem;
+    border-radius: 5px;
+}
+
+form a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: 'Tilt Neon', cursive;
+}
+
+@media screen and (max-width: 48rem) {
+
+    .all-container {
+        width: 50%;
+        height: 38rem;
+        position: relative;
+        display: block;
+    }
+
+    .image {
+        width: 100%;
+        height: 12rem;
+        background-image: url(images/bg-main-mobile.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        flex-basis: 100%;
+    }
+
+    .cardback {
+        height: 8rem;
+        width: 15rem;
+        position: absolute;
+        top: 2rem;
+        left: 4.25rem;
+        z-index: 0;
+    }
+
+    .cardback .back-p {
+        color: #fff;
+        font-size: 0.7rem;
+        font-family: 'Tilt Neon', cursive;
+        position: absolute;
+        top: 3.5rem;
+        left: 12rem;
+    }
+
+    .inner-gradient {
+        height: 8rem;
+        width: 15rem;
+        display: flex;
+        position: absolute;
+        top: 6.55rem;
+        left: 1.5rem;
+    }
+
+    .big-circle {
+        height: 2rem;
+        width: 2rem;
+        margin-top: 0.75rem;
+        margin-left: 0.75rem;
+    }
+    
+    .small-circle {
+        height: 1rem;
+        width: 1rem;
+        margin-top: 1.35rem;
+        margin-left: 0.5rem;
+    }
+
+    .number-texts {
+        height: auto;
+        width: 16rem;
+        position: absolute;
+        top: 7rem;
+    }
+
+    .number-texts .numbers {
+        font-size: 1.05rem;
+        font-family: 'Tilt Neon', cursive;
+        margin-top: -5rem;
+    }
+
+    .inside-number-texts {
+        margin-top: 0.75rem;
+    }
+
+    .inside-number-texts p {
+        font-size: 0.4rem;
+        font-family: 'Tilt Neon', cursive;
+    }
+
+    form {
+        position: static;
+        margin: 5rem 2rem;
+    }
+
+    form p {
+        font-size: 1rem;
+    }
+
+    form input[type="text"] {
+        height: 2.5rem;
+        width: 20rem;
+    }
+
+    #ip3 {
+        height: 2.5rem;
+        width: 4.5rem;
+    }
+    
+    #ip4 {
+        height: 2.5rem;
+        width: 10rem;
+    }
+}
